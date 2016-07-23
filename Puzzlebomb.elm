@@ -23,6 +23,10 @@ css = stylesheet """
         margin-bottom: 1em;
         padding-bottom: 0.5em;
     }
+    header.puzzlebomb-header a {
+        color: black;
+        text-decoration: none;
+    }
     header.puzzlebomb-header .month, header .issue {
         font-size: 1rem;
         position: absolute;
@@ -49,11 +53,11 @@ css = stylesheet """
 
 header : String -> Int -> Html msg
 header issue month = 
-    Html.header [class "puzzlebomb-header"] [
+    Html.header [class "puzzlebomb-header"] [ a [href "http://puzzlebomb.co.uk"] [
         h2 [class "issue"] [text issue],
         h2 [class "month"] [text <| "issue "++(toString month)],
-        img [class "puzzlebomb-logo", src "puzzlebomb-logo.png"] []
-    ]
+        img [class "puzzlebomb-logo", src "../puzzlebomb-logo.png"] []
+    ]]
 
 footer : Html msg
 footer = Html.footer [] [

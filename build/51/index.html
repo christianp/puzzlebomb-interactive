@@ -8444,41 +8444,50 @@ var _user$project$Puzzlebomb$header = F2(
 			_elm_lang$core$Native_List.fromArray(
 				[
 					A2(
-					_elm_lang$html$Html$h2,
+					_elm_lang$html$Html$a,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('issue')
+							_elm_lang$html$Html_Attributes$href('http://puzzlebomb.co.uk')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html$text(issue)
-						])),
-					A2(
-					_elm_lang$html$Html$h2,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('month')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html$text(
 							A2(
-								_elm_lang$core$Basics_ops['++'],
-								'issue ',
-								_elm_lang$core$Basics$toString(month)))
-						])),
-					A2(
-					_elm_lang$html$Html$img,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('puzzlebomb-logo'),
-							_elm_lang$html$Html_Attributes$src('puzzlebomb-logo.png')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[]))
+							_elm_lang$html$Html$h2,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('issue')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text(issue)
+								])),
+							A2(
+							_elm_lang$html$Html$h2,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('month')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text(
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										'issue ',
+										_elm_lang$core$Basics$toString(month)))
+								])),
+							A2(
+							_elm_lang$html$Html$img,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('puzzlebomb-logo'),
+									_elm_lang$html$Html_Attributes$src('../puzzlebomb-logo.png')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[]))
+						]))
 				]));
 	});
-var _user$project$Puzzlebomb$css = _user$project$Css$stylesheet('\n    html {\n        font-size: 20px;\n    }\n    body {\n        width: 600px;\n        margin: 0 auto;\n        font-family: \"Apple LiGothic\", \"Century Gothic\", sans-serif;\n    }\n    .puzzlebomb-logo {\n        max-width: 100%;\n    }\n    header.puzzlebomb-header {\n        position: relative;\n        border-bottom: 1px solid;\n        margin-top: 1em;\n        margin-bottom: 1em;\n        padding-bottom: 0.5em;\n    }\n    header.puzzlebomb-header .month, header .issue {\n        font-size: 1rem;\n        position: absolute;\n    }\n    header.puzzlebomb-header .issue {\n        left: 0;\n    }\n    header.puzzlebomb-header .month {\n        right: 0;\n    }\n    .explanation {\n        font-weight: bold;\n        font-size: 0.75em;\n    }\n    footer {\n        margin-top: 1em;\n        border-top: 1px solid;\n        font-weight: bold;\n        font-size: 0.75em;\n        text-align: right;\n    }\n    ');
+var _user$project$Puzzlebomb$css = _user$project$Css$stylesheet('\n    html {\n        font-size: 20px;\n    }\n    body {\n        width: 600px;\n        margin: 0 auto;\n        font-family: \"Apple LiGothic\", \"Century Gothic\", sans-serif;\n    }\n    .puzzlebomb-logo {\n        max-width: 100%;\n    }\n    header.puzzlebomb-header {\n        position: relative;\n        border-bottom: 1px solid;\n        margin-top: 1em;\n        margin-bottom: 1em;\n        padding-bottom: 0.5em;\n    }\n    header.puzzlebomb-header a {\n        color: black;\n        text-decoration: none;\n    }\n    header.puzzlebomb-header .month, header .issue {\n        font-size: 1rem;\n        position: absolute;\n    }\n    header.puzzlebomb-header .issue {\n        left: 0;\n    }\n    header.puzzlebomb-header .month {\n        right: 0;\n    }\n    .explanation {\n        font-weight: bold;\n        font-size: 0.75em;\n    }\n    footer {\n        margin-top: 1em;\n        border-top: 1px solid;\n        font-weight: bold;\n        font-size: 0.75em;\n        text-align: right;\n    }\n    ');
 var _user$project$Puzzlebomb$puzzlebomb = F3(
 	function (issue, month, puzzle) {
 		return A2(
@@ -8495,303 +8504,39 @@ var _user$project$Puzzlebomb$puzzlebomb = F3(
 					_user$project$Puzzlebomb$footer
 				]));
 	});
-var _user$project$Main$viewMirror = function (mirror) {
-	var attrs = _elm_lang$core$Native_List.fromArray(
-		[
-			_elm_lang$svg$Svg_Attributes$x('-0.05'),
-			_elm_lang$svg$Svg_Attributes$y('-0.25'),
-			_elm_lang$svg$Svg_Attributes$width('0.1'),
-			_elm_lang$svg$Svg_Attributes$height('0.5')
-		]);
-	var rect = function () {
-		var _p0 = mirror;
-		switch (_p0.ctor) {
-			case 'Empty':
-				return _elm_lang$core$Native_List.fromArray(
-					[]);
-			case 'NESW':
-				return _elm_lang$core$Native_List.fromArray(
-					[
-						A2(
-						_elm_lang$svg$Svg$rect,
-						A2(
-							_elm_lang$core$Basics_ops['++'],
-							attrs,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$svg$Svg_Attributes$class('mirror-nesw')
-								])),
-						_elm_lang$core$Native_List.fromArray(
-							[]))
-					]);
-			default:
-				return _elm_lang$core$Native_List.fromArray(
-					[
-						A2(
-						_elm_lang$svg$Svg$rect,
-						A2(
-							_elm_lang$core$Basics_ops['++'],
-							attrs,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$svg$Svg_Attributes$class('mirror-nwse')
-								])),
-						_elm_lang$core$Native_List.fromArray(
-							[]))
-					]);
-		}
-	}();
-	return A2(
-		_elm_lang$html$Html$span,
-		_elm_lang$core$Native_List.fromArray(
-			[
-				_elm_lang$html$Html_Attributes$class('mirror')
-			]),
-		_elm_lang$core$Native_List.fromArray(
-			[
+var _user$project$Main$lettersOf = F2(
+	function (letters, word) {
+		return _elm_lang$core$Set$fromList(
+			_elm_lang$core$String$toList(
 				A2(
-				_elm_lang$svg$Svg$svg,
-				_elm_lang$core$Native_List.fromArray(
-					[
-						_elm_lang$svg$Svg_Attributes$viewBox('0 0 1 1')
-					]),
-				rect)
-			]));
-};
-var _user$project$Main$regionOf = F2(
-	function (pos, regions) {
-		return _elm_lang$core$List$head(
-			A2(
-				_elm_lang$core$List$filter,
-				_elm_lang$core$Set$member(pos),
-				regions));
+					_elm_lang$core$String$filter,
+					function (c) {
+						return A2(_elm_lang$core$List$member, c, letters);
+					},
+					word)));
 	});
-var _user$project$Main$isRectangle = function (region) {
-	var list = _elm_lang$core$Set$toList(region);
-	var xs = A2(_elm_lang$core$List$map, _elm_lang$core$Basics$fst, list);
-	var mleft = _elm_lang$core$List$minimum(xs);
-	var mright = _elm_lang$core$List$maximum(xs);
-	var ys = A2(_elm_lang$core$List$map, _elm_lang$core$Basics$snd, list);
-	var mtop = _elm_lang$core$List$minimum(ys);
-	var mbottom = _elm_lang$core$List$maximum(ys);
-	var _p1 = {ctor: '_Tuple4', _0: mleft, _1: mright, _2: mtop, _3: mbottom};
-	if (((((_p1.ctor === '_Tuple4') && (_p1._0.ctor === 'Just')) && (_p1._1.ctor === 'Just')) && (_p1._2.ctor === 'Just')) && (_p1._3.ctor === 'Just')) {
+var _user$project$Main$sameLetters = F3(
+	function (letters, word1, word2) {
 		return _elm_lang$core$Native_Utils.eq(
-			_elm_lang$core$Set$size(region),
-			((1 + _p1._1._0) - _p1._0._0) * ((1 + _p1._3._0) - _p1._2._0));
-	} else {
-		return true;
-	}
-};
-var _user$project$Main$shikakuShaded = function (_p2) {
-	var _p3 = _p2;
-	return _p3._1._0;
-};
-var _user$project$Main$shikakuOpen = F2(
-	function (_p4, dir) {
-		var _p5 = _p4;
-		var _p6 = dir;
-		switch (_p6.ctor) {
-			case 'N':
-				return _p5._1._1;
-			case 'S':
-				return _p5._1._2;
-			case 'E':
-				return _p5._1._3;
-			default:
-				return _p5._1._4;
-		}
+			A2(_user$project$Main$lettersOf, letters, word1),
+			A2(_user$project$Main$lettersOf, letters, word2));
 	});
-var _user$project$Main$justList = function (maybes) {
-	justList:
-	while (true) {
-		var _p7 = maybes;
-		if (_p7.ctor === '[]') {
-			return _elm_lang$core$Native_List.fromArray(
-				[]);
-		} else {
-			if (_p7._0.ctor === 'Nothing') {
-				var _v6 = _p7._1;
-				maybes = _v6;
-				continue justList;
-			} else {
-				return A2(
-					_elm_lang$core$List_ops['::'],
-					_p7._0._0,
-					_user$project$Main$justList(_p7._1));
-			}
-		}
-	}
-};
-var _user$project$Main$sudokuValue = function (_p8) {
-	var _p9 = _p8;
-	var _p10 = _p9._0;
-	if (_p10.ctor === 'SudokuFixed') {
-		return _elm_lang$core$Maybe$Just(_p10._0);
-	} else {
-		return _p10._0;
-	}
-};
-var _user$project$Main$rowValid = F2(
-	function (row, model) {
-		var cells = function (_p11) {
-			return _user$project$Main$justList(
-				_elm_lang$core$Array$toList(
-					A2(
-						_elm_lang$core$Array$map,
-						_user$project$Main$sudokuValue,
-						A2(_user$project$Grid$getRow, row, _p11))));
-		}(model.grid);
-		return _elm_lang$core$Native_Utils.eq(
-			_elm_lang$core$Set$size(
-				_elm_lang$core$Set$fromList(cells)),
-			_elm_lang$core$List$length(cells));
-	});
-var _user$project$Main$colValid = F2(
-	function (col, model) {
-		var cells = function (_p12) {
-			return _user$project$Main$justList(
-				_elm_lang$core$Array$toList(
-					A2(
-						_elm_lang$core$Array$map,
-						_user$project$Main$sudokuValue,
-						A2(_user$project$Grid$getColumn, col, _p12))));
-		}(model.grid);
-		return _elm_lang$core$Native_Utils.eq(
-			_elm_lang$core$Set$size(
-				_elm_lang$core$Set$fromList(cells)),
-			_elm_lang$core$List$length(cells));
-	});
-var _user$project$Main$regionInvalid = F2(
-	function (region, grid) {
-		var shadedPositions = A2(
-			_elm_lang$core$Set$filter,
-			function (_p13) {
-				var _p14 = _p13;
-				return A2(
-					_elm_lang$core$Maybe$withDefault,
-					false,
-					A2(
-						_elm_lang$core$Maybe$map,
-						function (c) {
-							return _user$project$Main$shikakuShaded(c) && (!_elm_lang$core$Native_Utils.eq(
-								_user$project$Main$sudokuValue(c),
-								_elm_lang$core$Maybe$Nothing));
-						},
-						A3(_user$project$Grid$get, _p14._0, _p14._1, grid)));
-			},
-			region);
-		var value = A2(
-			_elm_lang$core$Maybe$andThen,
-			_elm_lang$core$List$head(
-				_elm_lang$core$Set$toList(shadedPositions)),
-			function (_p15) {
-				var _p16 = _p15;
-				return A2(
-					_elm_lang$core$Maybe$andThen,
-					A3(_user$project$Grid$get, _p16._0, _p16._1, grid),
-					_user$project$Main$sudokuValue);
-			});
-		var numShaded = _elm_lang$core$Set$size(shadedPositions);
-		return (_elm_lang$core$Native_Utils.cmp(numShaded, 1) > 0) || (_elm_lang$core$Native_Utils.eq(numShaded, 1) && (!_elm_lang$core$Native_Utils.eq(
-			_elm_lang$core$Maybe$Just(
-				_elm_lang$core$Set$size(region)),
-			value)));
-	});
-var _user$project$Main$regionValid = F2(
-	function (region, grid) {
-		var shadedPositions = A2(
-			_elm_lang$core$Set$filter,
-			function (_p17) {
-				var _p18 = _p17;
-				return A2(
-					_elm_lang$core$Maybe$withDefault,
-					false,
-					A2(
-						_elm_lang$core$Maybe$map,
-						function (c) {
-							return _user$project$Main$shikakuShaded(c) && (!_elm_lang$core$Native_Utils.eq(
-								_user$project$Main$sudokuValue(c),
-								_elm_lang$core$Maybe$Nothing));
-						},
-						A3(_user$project$Grid$get, _p18._0, _p18._1, grid)));
-			},
-			region);
-		var value = A2(
-			_elm_lang$core$Maybe$andThen,
-			_elm_lang$core$List$head(
-				_elm_lang$core$Set$toList(shadedPositions)),
-			function (_p19) {
-				var _p20 = _p19;
-				return A2(
-					_elm_lang$core$Maybe$andThen,
-					A3(_user$project$Grid$get, _p20._0, _p20._1, grid),
-					_user$project$Main$sudokuValue);
-			});
-		return _user$project$Main$isRectangle(region) && (_elm_lang$core$Native_Utils.eq(
-			_elm_lang$core$Set$size(shadedPositions),
-			1) && _elm_lang$core$Native_Utils.eq(
-			_elm_lang$core$Maybe$Just(
-				_elm_lang$core$Set$size(region)),
-			value));
-	});
-var _user$project$Main$indexToPos = function (i) {
-	var x = A2(_elm_lang$core$Basics_ops['%'], i, 9);
-	var y = ((i - x) / 9) | 0;
-	return {ctor: '_Tuple2', _0: x, _1: y};
-};
-var _user$project$Main$blockOf = F2(
-	function (x, y) {
-		return (((y / 3) | 0) * 3) + ((x / 3) | 0);
-	});
-var _user$project$Main$getBlock = F2(
-	function (block, _p21) {
-		var _p22 = _p21;
-		return A2(
-			_elm_lang$core$List$map,
-			_elm_lang$core$Basics$snd,
-			A2(
-				_elm_lang$core$List$filter,
-				function (_p23) {
-					var _p24 = _p23;
-					return function (_p25) {
-						var _p26 = _p25;
-						return _elm_lang$core$Native_Utils.eq(
-							A2(_user$project$Main$blockOf, _p26._0, _p26._1),
-							block);
-					}(
-						_user$project$Main$indexToPos(_p24._0));
-				},
-				_elm_lang$core$Array$toIndexedList(_p22._2)));
-	});
-var _user$project$Main$blockValid = F2(
-	function (block, model) {
-		var cells = function (_p27) {
-			return _user$project$Main$justList(
-				A2(
-					_elm_lang$core$List$map,
-					_user$project$Main$sudokuValue,
-					A2(_user$project$Main$getBlock, block, _p27)));
-		}(model.grid);
-		return _elm_lang$core$Native_Utils.eq(
-			_elm_lang$core$Set$size(
-				_elm_lang$core$Set$fromList(cells)),
-			_elm_lang$core$List$length(cells));
-	});
-var _user$project$Main$viewRegion = function (positions) {
-	return A2(
-		_elm_lang$core$String$join,
-		',',
-		A2(
-			_elm_lang$core$List$map,
-			_elm_lang$core$Basics$toString,
-			_elm_lang$core$Set$toList(positions)));
-};
+var _user$project$Main$consonants = _elm_lang$core$String$toList('bcdfghjklmnpqrstvwxyz');
+var _user$project$Main$vowels = _elm_lang$core$String$toList('aeiou');
 var _user$project$Main$attribution = A2(
-	_evancz$elm_markdown$Markdown$toHtml,
+	_elm_lang$html$Html$div,
 	_elm_lang$core$Native_List.fromArray(
-		[]),
-	'\nSUSHIKASERS:  \nby [@stecks](http://twitter.com/stecks)  \n& [@gheizhwinder](http://twitter.com/gheizhwinder)\n');
+		[
+			_elm_lang$html$Html_Attributes$class('attribution')
+		]),
+	_elm_lang$core$Native_List.fromArray(
+		[
+			A2(
+			_evancz$elm_markdown$Markdown$toHtml,
+			_elm_lang$core$Native_List.fromArray(
+				[]),
+			'\nCONCORDANT AVOWAL:  \nby [@stecks](http://twitter.com/stecks) and [@apaultaylor](http://twitter.com/apaultaylor)\n')
+		]));
 var _user$project$Main$explanation = A2(
 	_elm_lang$html$Html$div,
 	_elm_lang$core$Native_List.fromArray(
@@ -8804,1437 +8549,255 @@ var _user$project$Main$explanation = A2(
 			_evancz$elm_markdown$Markdown$toHtml,
 			_elm_lang$core$Native_List.fromArray(
 				[]),
-			'\nThis puzzle is actually three puzzles.\n\nFirst you must solve a Sudoku puzzle using the numbers - filling the grid so each row, column and 3×3 box contains the numbers 1-9 once each.\n\nThen use the numbers in shaded cells to solve a Shikaku puzzle - partition the grid into square or rectangular boxes, each containing one number which is the area of that box.\n\nFinally you must use the outlines of boxes from the Shikaku puzzle and the outside labels to place a 45° diagonal mirror in one square of each box, so that the lasers emitted by the lettered rectangles into the grid bounce off the number of mirrors given before reaching their targets. Both sides of the mirrors are reflective.\n')
+			'\nThe single-word answers to each set of clues form a \'ladder\', in which each rung shares the same vowels or consonants, alternately, as the next word.\n')
 		]));
-var _user$project$Main$css = _user$project$Css$stylesheet('\n    .sushikasers header h1, .sushikasers header h2 {\n        display: inline-block;\n    }\n    .sushikasers h1 {\n        text-transform: uppercase;\n        font-size: 4rem;\n        margin: 0;\n        line-height: 1em;\n    }\n    .sushikasers .attribution {\n        transform: rotate(90deg);\n        width: 4.1rem;\n        font-size: 0.5rem;\n        text-align: right;\n        vertical-align: top;\n    }\n    .controls {\n        text-align: center;\n    }\n\n    .controls button {\n        background: #f4f4f4;\n        border: 2px solid #888;\n        padding: 0.3em;\n        font-size: 1.2rem;\n        margin: 0.4rem 1rem;\n    }\n\n    .controls button.current-tool {\n        background: #888;\n        color: white;\n    }\n\n    .controls button:hover {\n        background: hsl(120,50%,60%);\n        color: white;\n    }\n\n    .grid {\n        font-family: sans-serif;\n        margin-left: auto;\n        margin-right: auto;\n        border-collapse: collapse;\n    }\n    .grid .cell {\n        border: 2px solid #ddd;\n        text-align: center;\n        position: relative;\n    }\n    .grid .cell.fixed .value {\n        font-weight: bold;\n        font-family: monospace;\n    }\n\n    .grid .cell.shaded, .grid .cell.shaded input {\n        background: #eee;\n    }\n    .grid .cell.shaded input:focus {\n        background: white;\n    }\n\n    .sushikasers.sudoku .grid .cell.row-invalid, .sushikasers.sudoku .grid .cell.row-invalid input,\n    .sushikasers.sudoku .grid .cell.col-invalid, .sushikasers.sudoku .grid .cell.col-invalid input,\n    .sushikasers.sudoku .grid .cell.block-invalid, .sushikasers.sudoku .grid .cell.block-invalid input,\n    .sushikasers.shikaku .grid .cell.region-not-rectangle,\n    .sushikasers.shikaku .grid .cell.region-invalid,\n    .sushikasers.lasers .grid .cell.region-too-many-mirrors\n    {\n        background: hsl(0,100%,70%);\n        color: white;\n    }\n    .sushikasers.shikaku .grid .cell.region-correct,\n    .sushikasers.lasers .grid .cell.region-has-mirror\n    {\n        background: hsl(120,50%,95%);\n    }\n    .grid td, .grid th {\n        width: 2.1rem;\n        height: 2.1rem;\n    }\n    .grid .cell input {\n        width: 2rem;\n        height: 1.9rem;\n        font-size: 1rem;\n        border: none;\n        text-align: center;\n        color: black;\n    }\n    .grid .cell .value, .grid .cell input {\n        font-size: 1.5em;\n    }\n    .grid .cell input:focus {\n        background: #eee;\n    }\n\n    .grid tr:nth-child(2) .cell {\n        border-top: 4px solid black !important;\n    }\n\n    .grid tr:nth-child(10) .cell {\n        border-bottom: 4px solid black !important;\n    }\n\n    .grid .cell:nth-of-type(1) {\n        border-left: 4px solid black !important;\n    }\n\n    .grid .cell:nth-of-type(9) {\n        border-right: 4px solid black !important;\n    }\n\n    .sushikasers.sudoku td:nth-of-type(3n+3):not(:nth-child(10)) {\n        border-right: 2px solid black;\n    }\n    .sushikasers.sudoku tr:nth-child(3n+4):not(:nth-child(10)) td {\n        border-bottom: 2px solid black;\n    }\n\n    .sushikasers.shikaku .grid .cell.box-left, .sushikasers.lasers .grid .cell.box-left {\n        border-left: 2px solid black;\n    }\n\n    .sushikasers.shikaku .grid .cell.box-right, .sushikasers.lasers .grid .cell.box-right {\n        border-right: 2px solid black;\n    }\n\n    .sushikasers.shikaku .grid .cell.box-top, .sushikasers.lasers .grid .cell.box-top {\n        border-top: 2px solid black;\n    }\n\n    .sushikasers.shikaku .grid .cell.box-bottom, .sushikasers.lasers .grid .cell.box-bottom {\n        border-bottom: 2px solid black;\n    }\n\n    .laser {\n        padding: 0.3em;\n        text-align: center;\n    }\n\n    .laser-end {\n        background: #eee;\n        padding: 0.2em 0.4em;\n    }\n\n    .laser-start {\n        background: #eee;\n        padding: 0.2em 0.5em;\n        border-radius: 50%;\n    }\n\n    .laser-ok .laser-start, .laser-ok .laser-end {\n        background: hsl(120,50%,75%);\n    }\n\n    .laser-trail, .mirror {\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        left: 0;\n        top: 0;\n    }\n\n    .laser-trail .laser-hit {\n        fill: hsla(120,100%,50%,0.7);\n    }\n    .laser-trail .laser-miss {\n        fill: hsla(0,100%,50%,0.7);\n    }\n\n    .mirror-nesw, .mirror-nwse {\n        fill: black;\n    }\n    .mirror-nesw {\n        transform: translate(0.5px,0.5px) rotate(45deg);\n    }\n    .mirror-nwse {\n        transform: translate(0.5px,0.5px) rotate(-45deg);\n    }\n\n    ');
-var _user$project$Main$adjacentCell = F3(
-	function (x, y, dir) {
-		var _p28 = dir;
-		switch (_p28.ctor) {
-			case 'N':
-				return {ctor: '_Tuple2', _0: x, _1: y - 1};
-			case 'S':
-				return {ctor: '_Tuple2', _0: x, _1: y + 1};
-			case 'E':
-				return {ctor: '_Tuple2', _0: x + 1, _1: y};
-			default:
-				return {ctor: '_Tuple2', _0: x - 1, _1: y};
+var _user$project$Main$css = _user$project$Css$stylesheet('\n.concordant-avowal h1 {\n    text-transform: uppercase;\n    margin: 0;\n    font-size: 4rem;\n    line-height: 0.9em;\n}\n.concordant-avowal header {\n    position: relative;\n}\n\n.concordant-avowal header h2 {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    font-size: 0.7rem;\n    width: 10em;\n    text-align: right;\n    margin: 0;\n    line-height: 1em;\n}\n\n.attribution p {\n    margin: 0;\n}\n.ladder {\n    list-style: none;\n    padding: 0;\n    margin: 0 0.5em;\n}\n\n.ladders {\n    display: flex;\n    padding: 0;\n}\n\n.rung input {\n    width: 6em;\n    margin-left: 1em;\n    height: 1em;\n    margin-bottom: 1em;\n    border: none;\n    border-bottom: 1px solid black;\n}\n\n.rung {\n    text-align: right;\n    font-size: 0.7rem;\n    display: flex;\n    justify-content: flex-end;\n    padding: 0.5em 0;\n}\n.rung.incorrect, .rung.incorrect input {\n    background: hsl(0,100%,50%);\n    color: white;\n}\n.rung.incorrect input {\n    border-bottom-color: white;\n}\n.rung.correct, .rung.correct input {\n    background: hsl(120,70%,70%);\n}\n\n.rung .clue {\n    font-weight: bold;\n}\n    ');
+var _user$project$Main$Model = function (a) {
+	return {ladders: a};
+};
+var _user$project$Main$Rung = F2(
+	function (a, b) {
+		return {ctor: 'Rung', _0: a, _1: b};
+	});
+var _user$project$Main$rung = function (clue) {
+	return A2(_user$project$Main$Rung, clue, '');
+};
+var _user$project$Main$ladder = function (clues) {
+	return _elm_lang$core$Array$fromList(
+		A2(_elm_lang$core$List$map, _user$project$Main$rung, clues));
+};
+var _user$project$Main$ladder1 = _user$project$Main$ladder(
+	_elm_lang$core$Native_List.fromArray(
+		['played first', 'bully', 'around', 'ethnic', 'ado', 'circuits', 'vessels']));
+var _user$project$Main$ladder2 = _user$project$Main$ladder(
+	_elm_lang$core$Native_List.fromArray(
+		['nightclothes', 'prize', 'buzzing', 'pave', 'be situated beyond', 'Canadian police', 'facilities']));
+var _user$project$Main$ladder3 = _user$project$Main$ladder(
+	_elm_lang$core$Native_List.fromArray(
+		['confirm', 'picturesque', 'deduction of facts', 'dropper', 'hunger', 'sprite (old spelling)', 'hairstyle']));
+var _user$project$Main$initModel = {
+	ladders: _elm_lang$core$Array$fromList(
+		_elm_lang$core$Native_List.fromArray(
+			[_user$project$Main$ladder1, _user$project$Main$ladder2, _user$project$Main$ladder3]))
+};
+var _user$project$Main$updateLadder = F2(
+	function (msg, ladder) {
+		var _p0 = msg;
+		var _p2 = _p0._0;
+		var _p1 = A2(_elm_lang$core$Array$get, _p2, ladder);
+		if (_p1.ctor === 'Nothing') {
+			return ladder;
+		} else {
+			return A3(
+				_elm_lang$core$Array$set,
+				_p2,
+				A2(
+					_user$project$Main$Rung,
+					_p1._0._0,
+					_elm_lang$core$String$toLower(_p0._1)),
+				ladder);
 		}
 	});
-var _user$project$Main$LaserPath = F4(
-	function (a, b, c, d) {
-		return {laser: a, path: b, end: c, bounces: d};
-	});
-var _user$project$Main$Model = F3(
-	function (a, b, c) {
-		return {grid: a, currentTool: b, shikakuLast: c};
-	});
-var _user$project$Main$SudokuFree = function (a) {
-	return {ctor: 'SudokuFree', _0: a};
-};
-var _user$project$Main$e = _user$project$Main$SudokuFree(_elm_lang$core$Maybe$Nothing);
-var _user$project$Main$SudokuFixed = function (a) {
-	return {ctor: 'SudokuFixed', _0: a};
-};
-var _user$project$Main$f = function (n) {
-	return _user$project$Main$SudokuFixed(n);
-};
-var _user$project$Main$initialSudoku = _elm_lang$core$Native_List.fromArray(
-	[
-		_user$project$Main$f(1),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(3),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(8),
-		_user$project$Main$f(9),
-		_user$project$Main$e,
-		_user$project$Main$f(3),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(8),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(2),
-		_user$project$Main$e,
-		_user$project$Main$f(9),
-		_user$project$Main$e,
-		_user$project$Main$f(2),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(7),
-		_user$project$Main$f(6),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(5),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(7),
-		_user$project$Main$e,
-		_user$project$Main$f(1),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(8),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(5),
-		_user$project$Main$f(3),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(3),
-		_user$project$Main$e,
-		_user$project$Main$f(2),
-		_user$project$Main$e,
-		_user$project$Main$f(6),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(1),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(5),
-		_user$project$Main$e,
-		_user$project$Main$f(4),
-		_user$project$Main$f(8),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(6),
-		_user$project$Main$e,
-		_user$project$Main$e,
-		_user$project$Main$f(3)
-	]);
-var _user$project$Main$ShikakuCell = F5(
-	function (a, b, c, d, e) {
-		return {ctor: 'ShikakuCell', _0: a, _1: b, _2: c, _3: d, _4: e};
-	});
-var _user$project$Main$s = A5(_user$project$Main$ShikakuCell, true, false, false, false, false);
-var _user$project$Main$n = A5(_user$project$Main$ShikakuCell, false, false, false, false, false);
-var _user$project$Main$initialShikaku = _elm_lang$core$Native_List.fromArray(
-	[_user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$n, _user$project$Main$s, _user$project$Main$n, _user$project$Main$n]);
-var _user$project$Main$NWSE = {ctor: 'NWSE'};
-var _user$project$Main$NESW = {ctor: 'NESW'};
-var _user$project$Main$Empty = {ctor: 'Empty'};
-var _user$project$Main$initialLasers = A2(_elm_lang$core$List$repeat, 81, _user$project$Main$Empty);
-var _user$project$Main$regionMirrors = F2(
-	function (region, grid) {
-		var hasMirror = function (_p29) {
-			var _p30 = _p29;
-			return !_elm_lang$core$Native_Utils.eq(_p30._2, _user$project$Main$Empty);
-		};
-		return _elm_lang$core$Set$size(
-			A2(
-				_elm_lang$core$Set$filter,
-				function (_p31) {
-					var _p32 = _p31;
-					return A2(
-						_elm_lang$core$Maybe$withDefault,
-						false,
-						A2(
-							_elm_lang$core$Maybe$map,
-							hasMirror,
-							A3(_user$project$Grid$get, _p32._0, _p32._1, grid)));
-				},
-				region));
-	});
-var _user$project$Main$Cell = F3(
-	function (a, b, c) {
-		return {ctor: 'Cell', _0: a, _1: b, _2: c};
-	});
-var _user$project$Main$initialGrid = A3(
-	_user$project$Grid$Grid,
-	9,
-	9,
-	_elm_lang$core$Array$fromList(
-		A4(_elm_lang$core$List$map3, _user$project$Main$Cell, _user$project$Main$initialSudoku, _user$project$Main$initialShikaku, _user$project$Main$initialLasers)));
-var _user$project$Main$toggleWall = F3(
-	function (_p33, direction, model) {
-		var _p34 = _p33;
-		var _p43 = _p34._1;
-		var _p42 = _p34._0;
-		var _p35 = A3(_user$project$Grid$get, _p42, _p43, model.grid);
-		if (_p35.ctor === 'Nothing') {
+var _user$project$Main$update = F2(
+	function (msg, model) {
+		var _p3 = msg;
+		var _p5 = _p3._0;
+		var _p4 = A2(_elm_lang$core$Array$get, _p5, model.ladders);
+		if (_p4.ctor === 'Nothing') {
 			return model;
 		} else {
-			var _p41 = _p35._0._1._4;
-			var _p40 = _p35._0._1._0;
-			var _p39 = _p35._0._1._2;
-			var _p38 = _p35._0._1._1;
-			var _p37 = _p35._0._1._3;
-			var nshikaku = function () {
-				var _p36 = direction;
-				switch (_p36.ctor) {
-					case 'N':
-						return A5(
-							_user$project$Main$ShikakuCell,
-							_p40,
-							_elm_lang$core$Basics$not(_p38),
-							_p39,
-							_p37,
-							_p41);
-					case 'S':
-						return A5(
-							_user$project$Main$ShikakuCell,
-							_p40,
-							_p38,
-							_elm_lang$core$Basics$not(_p39),
-							_p37,
-							_p41);
-					case 'E':
-						return A5(
-							_user$project$Main$ShikakuCell,
-							_p40,
-							_p38,
-							_p39,
-							_elm_lang$core$Basics$not(_p37),
-							_p41);
-					default:
-						return A5(
-							_user$project$Main$ShikakuCell,
-							_p40,
-							_p38,
-							_p39,
-							_p37,
-							_elm_lang$core$Basics$not(_p41));
-				}
-			}();
-			var ncell = A3(_user$project$Main$Cell, _p35._0._0, nshikaku, _p35._0._2);
 			return _elm_lang$core$Native_Utils.update(
 				model,
 				{
-					grid: A4(_user$project$Grid$set, _p42, _p43, ncell, model.grid)
+					ladders: A3(
+						_elm_lang$core$Array$set,
+						_p5,
+						A2(_user$project$Main$updateLadder, _p3._1, _p4._0),
+						model.ladders)
 				});
 		}
 	});
-var _user$project$Main$cycleMirror = function (_p44) {
-	var _p45 = _p44;
-	var nmirror = function () {
-		var _p46 = _p45._2;
-		switch (_p46.ctor) {
-			case 'Empty':
-				return _user$project$Main$NESW;
-			case 'NESW':
-				return _user$project$Main$NWSE;
-			default:
-				return _user$project$Main$Empty;
-		}
-	}();
-	return A3(_user$project$Main$Cell, _p45._0, _p45._1, nmirror);
-};
-var _user$project$Main$Laser = F6(
-	function (a, b, c, d, e, f) {
-		return {ctor: 'Laser', _0: a, _1: b, _2: c, _3: d, _4: e, _5: f};
-	});
-var _user$project$Main$W = {ctor: 'W'};
-var _user$project$Main$E = {ctor: 'E'};
-var _user$project$Main$S = {ctor: 'S'};
-var _user$project$Main$N = {ctor: 'N'};
-var _user$project$Main$lasers = _elm_lang$core$Native_List.fromArray(
-	[
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('A'),
-		_user$project$Main$N,
-		1,
-		_user$project$Main$W,
-		2,
-		5),
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('B'),
-		_user$project$Main$N,
-		3,
-		_user$project$Main$W,
-		7,
-		3),
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('C'),
-		_user$project$Main$N,
-		7,
-		_user$project$Main$E,
-		6,
-		3),
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('D'),
-		_user$project$Main$E,
-		3,
-		_user$project$Main$S,
-		7,
-		1),
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('E'),
-		_user$project$Main$E,
-		5,
-		_user$project$Main$S,
-		5,
-		1),
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('F'),
-		_user$project$Main$S,
-		1,
-		_user$project$Main$S,
-		0,
-		2),
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('G'),
-		_user$project$Main$W,
-		8,
-		_user$project$Main$W,
-		0,
-		4),
-		A6(
-		_user$project$Main$Laser,
-		_elm_lang$core$Native_Utils.chr('H'),
-		_user$project$Main$S,
-		3,
-		_user$project$Main$W,
-		1,
-		1)
-	]);
-var _user$project$Main$directionOf = F2(
-	function (dx, dy) {
-		var _p47 = {ctor: '_Tuple2', _0: dx, _1: dy};
-		_v24_4:
-		do {
-			if (_p47.ctor === '_Tuple2') {
-				switch (_p47._0) {
-					case 1:
-						if (_p47._1 === 0) {
-							return _user$project$Main$E;
-						} else {
-							break _v24_4;
-						}
-					case -1:
-						if (_p47._1 === 0) {
-							return _user$project$Main$W;
-						} else {
-							break _v24_4;
-						}
-					case 0:
-						switch (_p47._1) {
-							case 1:
-								return _user$project$Main$S;
-							case -1:
-								return _user$project$Main$N;
-							default:
-								break _v24_4;
-						}
+var _user$project$Main$Consonants = {ctor: 'Consonants'};
+var _user$project$Main$Vowels = {ctor: 'Vowels'};
+var _user$project$Main$NoRule = {ctor: 'NoRule'};
+var _user$project$Main$ladderAlternate = function (ladder) {
+	var handle = F2(
+		function (_p7, _p6) {
+			var _p8 = _p7;
+			var _p14 = _p8;
+			var _p13 = _p8._1;
+			var _p9 = _p6;
+			var _p12 = _p9._0._0._1;
+			var $this = function () {
+				var _p10 = _p9._0._2;
+				switch (_p10.ctor) {
+					case 'NoRule':
+						var sameConsonants = A3(_user$project$Main$sameLetters, _user$project$Main$consonants, _p12, _p13);
+						var sameVowels = A3(_user$project$Main$sameLetters, _user$project$Main$vowels, _p12, _p13);
+						var result = (_elm_lang$core$Native_Utils.eq(_p12, '') || (sameVowels || sameConsonants)) ? _elm_lang$core$Result$Ok : _elm_lang$core$Result$Err;
+						var _p11 = _elm_lang$core$Native_Utils.eq(_p12, '') ? {ctor: '_Tuple2', _0: _user$project$Main$NoRule, _1: _user$project$Main$NoRule} : ((sameVowels && sameConsonants) ? {ctor: '_Tuple2', _0: _user$project$Main$NoRule, _1: _user$project$Main$NoRule} : (sameVowels ? {ctor: '_Tuple2', _0: _user$project$Main$Vowels, _1: _user$project$Main$Consonants} : (sameConsonants ? {ctor: '_Tuple2', _0: _user$project$Main$Consonants, _1: _user$project$Main$Vowels} : {ctor: '_Tuple2', _0: _user$project$Main$NoRule, _1: _user$project$Main$NoRule})));
+						var rule$ = _p11._0;
+						var nrule = _p11._1;
+						return {
+							ctor: '_Tuple3',
+							_0: _p14,
+							_1: result(rule$),
+							_2: nrule
+						};
+					case 'Vowels':
+						return _elm_lang$core$Native_Utils.eq(_p13, '') ? {
+							ctor: '_Tuple3',
+							_0: _p14,
+							_1: _elm_lang$core$Result$Err(_user$project$Main$Vowels),
+							_2: _user$project$Main$NoRule
+						} : {
+							ctor: '_Tuple3',
+							_0: _p14,
+							_1: A3(_user$project$Main$sameLetters, _user$project$Main$vowels, _p12, _p13) ? _elm_lang$core$Result$Ok(_user$project$Main$Vowels) : _elm_lang$core$Result$Err(_user$project$Main$Vowels),
+							_2: _user$project$Main$Consonants
+						};
 					default:
-						break _v24_4;
+						return _elm_lang$core$Native_Utils.eq(_p13, '') ? {
+							ctor: '_Tuple3',
+							_0: _p14,
+							_1: _elm_lang$core$Result$Err(_user$project$Main$Consonants),
+							_2: _user$project$Main$NoRule
+						} : {
+							ctor: '_Tuple3',
+							_0: _p14,
+							_1: A3(_user$project$Main$sameLetters, _user$project$Main$consonants, _p12, _p13) ? _elm_lang$core$Result$Ok(_user$project$Main$Consonants) : _elm_lang$core$Result$Err(_user$project$Main$Consonants),
+							_2: _user$project$Main$Vowels
+						};
 				}
-			} else {
-				break _v24_4;
-			}
-		} while(false);
-		return _user$project$Main$N;
-	});
-var _user$project$Main$opposite = function (dir) {
-	var _p48 = dir;
-	switch (_p48.ctor) {
-		case 'N':
-			return _user$project$Main$S;
-		case 'S':
-			return _user$project$Main$N;
-		case 'E':
-			return _user$project$Main$W;
-		default:
-			return _user$project$Main$E;
-	}
-};
-var _user$project$Main$update = F2(
-	function (msg, model) {
-		var _p49 = msg;
-		switch (_p49.ctor) {
-			case 'CurrentTool':
-				return _elm_lang$core$Native_Utils.update(
-					model,
-					{currentTool: _p49._0});
-			case 'SetValue':
-				var _p56 = _p49._1;
-				var _p55 = _p49._0;
-				var _p54 = _p49._2;
-				var _p50 = A3(_user$project$Grid$get, _p55, _p56, model.grid);
-				if (_p50.ctor === 'Nothing') {
-					return model;
-				} else {
-					if (_p50._0._0.ctor === 'SudokuFixed') {
-						return model;
-					} else {
-						var v = A2(
-							_elm_lang$core$Result$withDefault,
-							_elm_lang$core$Maybe$Nothing,
-							A2(
-								_elm_lang$core$Result$andThen,
-								_elm_lang$core$String$toInt(_p54),
-								function (_p51) {
-									return _elm_lang$core$Result$Ok(
-										_elm_lang$core$Maybe$Just(_p51));
-								}));
-						var ok = function () {
-							var _p52 = v;
-							if (_p52.ctor === 'Nothing') {
-								return true;
-							} else {
-								var _p53 = _p52._0;
-								return (_elm_lang$core$Native_Utils.cmp(_p53, 1) > -1) && (_elm_lang$core$Native_Utils.cmp(_p53, 9) < 1);
-							}
-						}();
-						var dbg = A2(
-							_elm_lang$core$Debug$log,
-							'set',
-							{ctor: '_Tuple3', _0: _p55, _1: _p56, _2: _p54});
-						return ok ? _elm_lang$core$Native_Utils.update(
-							model,
-							{
-								grid: A4(
-									_user$project$Grid$set,
-									_p55,
-									_p56,
-									A3(
-										_user$project$Main$Cell,
-										_user$project$Main$SudokuFree(v),
-										_p50._0._1,
-										_p50._0._2),
-									model.grid)
-							}) : model;
-					}
-				}
-			case 'ShikakuClick':
-				var _p60 = _p49._1;
-				var _p59 = _p49._0;
-				var _p58 = _p49._2;
-				var _p57 = {ctor: '_Tuple3', _0: _p59, _1: _p60, _2: _p58};
-				_v29_4:
-				do {
-					if (_p57.ctor === '_Tuple3') {
-						switch (_p57._2.ctor) {
-							case 'W':
-								if (_p57._0 === 0) {
-									return model;
-								} else {
-									break _v29_4;
-								}
-							case 'E':
-								if (_p57._0 === 8) {
-									return model;
-								} else {
-									break _v29_4;
-								}
-							case 'N':
-								if (_p57._1 === 0) {
-									return model;
-								} else {
-									break _v29_4;
-								}
-							default:
-								if (_p57._1 === 8) {
-									return model;
-								} else {
-									break _v29_4;
-								}
-						}
-					} else {
-						break _v29_4;
-					}
-				} while(false);
-				return A3(
-					_user$project$Main$toggleWall,
-					A3(_user$project$Main$adjacentCell, _p59, _p60, _p58),
-					_user$project$Main$opposite(_p58),
-					A3(
-						_user$project$Main$toggleWall,
-						{ctor: '_Tuple2', _0: _p59, _1: _p60},
-						_p58,
-						model));
-			default:
-				var _p63 = _p49._1;
-				var _p62 = _p49._0;
-				var _p61 = A3(_user$project$Grid$get, _p62, _p63, model.grid);
-				if (_p61.ctor === 'Nothing') {
-					return model;
-				} else {
-					return _elm_lang$core$Native_Utils.update(
-						model,
-						{
-							grid: A4(
-								_user$project$Grid$set,
-								_p62,
-								_p63,
-								_user$project$Main$cycleMirror(_p61._0),
-								model.grid)
-						});
-				}
-		}
-	});
-var _user$project$Main$laserPath = F2(
-	function (grid, _p64) {
-		var _p65 = _p64;
-		var _p74 = _p65._2;
-		var _p73 = _p65._1;
-		var advance = F3(
-			function (dir, pos, path) {
-				advance:
-				while (true) {
-					var _p66 = pos;
-					switch (_p66._0) {
-						case -1:
-							return _elm_lang$core$Native_Utils.update(
-								path,
-								{
-									end: {
-										ctor: '_Tuple2',
-										_0: dir,
-										_1: _elm_lang$core$Basics$snd(pos)
-									}
-								});
-						case 9:
-							return _elm_lang$core$Native_Utils.update(
-								path,
-								{
-									end: {
-										ctor: '_Tuple2',
-										_0: dir,
-										_1: _elm_lang$core$Basics$snd(pos)
-									}
-								});
-						default:
-							switch (_p66._1) {
-								case -1:
-									return _elm_lang$core$Native_Utils.update(
-										path,
-										{
-											end: {
-												ctor: '_Tuple2',
-												_0: dir,
-												_1: _elm_lang$core$Basics$fst(pos)
-											}
-										});
-								case 9:
-									return _elm_lang$core$Native_Utils.update(
-										path,
-										{
-											end: {
-												ctor: '_Tuple2',
-												_0: dir,
-												_1: _elm_lang$core$Basics$fst(pos)
-											}
-										});
-								default:
-									var _p71 = _p66._1;
-									var _p70 = _p66._0;
-									var _p67 = A3(_user$project$Grid$get, _p70, _p71, grid);
-									if (_p67.ctor === 'Nothing') {
-										return path;
-									} else {
-										var _p69 = _p67._0._2;
-										var nbounces = _elm_lang$core$Native_Utils.eq(_p69, _user$project$Main$Empty) ? path.bounces : (path.bounces + 1);
-										var ndir = function () {
-											var _p68 = {ctor: '_Tuple2', _0: _p69, _1: dir};
-											switch (_p68._0.ctor) {
-												case 'Empty':
-													return _p68._1;
-												case 'NESW':
-													switch (_p68._1.ctor) {
-														case 'N':
-															return _user$project$Main$E;
-														case 'S':
-															return _user$project$Main$W;
-														case 'W':
-															return _user$project$Main$S;
-														default:
-															return _user$project$Main$N;
-													}
-												default:
-													switch (_p68._1.ctor) {
-														case 'N':
-															return _user$project$Main$W;
-														case 'S':
-															return _user$project$Main$E;
-														case 'W':
-															return _user$project$Main$N;
-														default:
-															return _user$project$Main$S;
-													}
-											}
-										}();
-										var npos = A3(_user$project$Main$adjacentCell, _p70, _p71, ndir);
-										var _v35 = ndir,
-											_v36 = npos,
-											_v37 = _elm_lang$core$Native_Utils.update(
-											path,
-											{
-												bounces: nbounces,
-												path: A2(
-													_elm_lang$core$List_ops['::'],
-													{ctor: '_Tuple3', _0: dir, _1: ndir, _2: pos},
-													path.path)
-											});
-										dir = _v35;
-										pos = _v36;
-										path = _v37;
-										continue advance;
-									}
-							}
-					}
-				}
-			});
-		var pos = function () {
-			var _p72 = _p73;
-			switch (_p72.ctor) {
-				case 'N':
-					return {ctor: '_Tuple2', _0: _p74, _1: 0};
-				case 'S':
-					return {ctor: '_Tuple2', _0: _p74, _1: 8};
-				case 'W':
-					return {ctor: '_Tuple2', _0: 0, _1: _p74};
-				default:
-					return {ctor: '_Tuple2', _0: 8, _1: _p74};
-			}
-		}();
-		return A3(
-			advance,
-			_user$project$Main$opposite(_p73),
-			pos,
-			{
-				laser: _p65,
-				bounces: 0,
-				end: {ctor: '_Tuple2', _0: _user$project$Main$S, _1: 0},
-				path: _elm_lang$core$Native_List.fromArray(
-					[])
-			});
-	});
-var _user$project$Main$laserOk = F2(
-	function (grid, _p75) {
-		var _p76 = _p75;
-		var path = A2(_user$project$Main$laserPath, grid, _p76);
-		return _elm_lang$core$Native_Utils.eq(path.bounces, _p76._5) && _elm_lang$core$Native_Utils.eq(
-			{ctor: '_Tuple2', _0: _p76._3, _1: _p76._4},
-			path.end);
-	});
-var _user$project$Main$viewLaserEnd = F3(
-	function (grid, dir, pos) {
-		var maybeLaserOk = function (maybeLaser) {
-			return A2(
-				_elm_lang$core$Maybe$withDefault,
-				false,
-				A2(
-					_elm_lang$core$Maybe$map,
-					_user$project$Main$laserOk(grid),
-					maybeLaser));
-		};
-		var end = _elm_lang$core$List$head(
-			A2(
-				_elm_lang$core$List$filter,
-				function (_p77) {
-					var _p78 = _p77;
-					return _elm_lang$core$Native_Utils.eq(dir, _p78._3) && _elm_lang$core$Native_Utils.eq(pos, _p78._4);
-				},
-				_user$project$Main$lasers));
-		var endOk = maybeLaserOk(end);
-		var start = _elm_lang$core$List$head(
-			A2(
-				_elm_lang$core$List$filter,
-				function (_p79) {
-					var _p80 = _p79;
-					return _elm_lang$core$Native_Utils.eq(dir, _p80._1) && _elm_lang$core$Native_Utils.eq(pos, _p80._2);
-				},
-				_user$project$Main$lasers));
-		var startOk = maybeLaserOk(start);
-		return A2(
-			_elm_lang$html$Html$th,
-			_elm_lang$core$Native_List.fromArray(
-				[
-					_elm_lang$html$Html_Attributes$classList(
-					_elm_lang$core$Native_List.fromArray(
-						[
-							{ctor: '_Tuple2', _0: 'laser', _1: true},
-							{ctor: '_Tuple2', _0: 'laser-ok', _1: startOk || endOk}
-						]))
-				]),
-			_elm_lang$core$Native_List.fromArray(
-				[
-					function () {
-					var _p81 = {ctor: '_Tuple2', _0: start, _1: end};
-					if (_p81._0.ctor === 'Nothing') {
-						if (_p81._1.ctor === 'Nothing') {
-							return _elm_lang$html$Html$text('');
-						} else {
-							return A2(
-								_elm_lang$html$Html$span,
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html_Attributes$class('laser-start')
-									]),
-								_elm_lang$core$Native_List.fromArray(
-									[
-										_elm_lang$html$Html$text(
-										_elm_lang$core$String$fromChar(_p81._1._0._0))
-									]));
-						}
-					} else {
-						return A2(
-							_elm_lang$html$Html$span,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('laser-end')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text(
-									A2(
-										_elm_lang$core$String$cons,
-										_p81._0._0._0,
-										_elm_lang$core$Basics$toString(_p81._0._0._5)))
-								]));
-					}
-				}()
-				]));
-	});
-var _user$project$Main$findQuadrant = F4(
-	function (x, y, w, h) {
-		var d2 = _elm_lang$core$Native_Utils.cmp(w * (h - y), x * h) > 0;
-		var d1 = _elm_lang$core$Native_Utils.cmp(w * y, x * h) > 0;
-		var _p82 = {ctor: '_Tuple2', _0: d1, _1: d2};
-		if (_p82._0 === true) {
-			if (_p82._1 === true) {
-				return _user$project$Main$W;
-			} else {
-				return _user$project$Main$S;
-			}
-		} else {
-			if (_p82._1 === false) {
-				return _user$project$Main$E;
-			} else {
-				return _user$project$Main$N;
-			}
-		}
-	});
-var _user$project$Main$clickQuadrant = function (msg) {
-	return A2(
-		_elm_lang$core$Json_Decode$map,
-		msg,
-		A5(
-			_elm_lang$core$Json_Decode$object4,
-			_user$project$Main$findQuadrant,
-			A2(_elm_lang$core$Json_Decode_ops[':='], 'offsetX', _elm_lang$core$Json_Decode$float),
-			A2(_elm_lang$core$Json_Decode_ops[':='], 'offsetY', _elm_lang$core$Json_Decode$float),
-			A2(
-				_elm_lang$core$Json_Decode_ops[':='],
-				'target',
-				A2(_elm_lang$core$Json_Decode_ops[':='], 'clientWidth', _elm_lang$core$Json_Decode$float)),
-			A2(
-				_elm_lang$core$Json_Decode_ops[':='],
-				'target',
-				A2(_elm_lang$core$Json_Decode_ops[':='], 'clientHeight', _elm_lang$core$Json_Decode$float))));
-};
-var _user$project$Main$findRegions = function (_p83) {
-	var _p84 = _p83;
-	var _p90 = _p84;
-	var mergeRegions = F3(
-		function (regions, a, b) {
-			var toMerge = A2(
-				_elm_lang$core$List$filter,
-				function (r) {
-					return A2(_elm_lang$core$Set$member, a, r) || A2(_elm_lang$core$Set$member, b, r);
-				},
-				regions);
-			var merged = A3(_elm_lang$core$List$foldl, _elm_lang$core$Set$union, _elm_lang$core$Set$empty, toMerge);
-			return A2(
-				_elm_lang$core$List_ops['::'],
-				merged,
-				A2(
-					_elm_lang$core$List$filter,
-					function (r) {
-						return _elm_lang$core$Basics$not(
-							A2(_elm_lang$core$List$member, r, toMerge));
-					},
-					regions));
-		});
-	var considerCellDir = F4(
-		function (x, y, dir, regions) {
-			var _p85 = A3(_user$project$Main$adjacentCell, x, y, dir);
-			var nx = _p85._0;
-			var ny = _p85._1;
-			var _p86 = {
+			}();
+			return {
 				ctor: '_Tuple2',
-				_0: A3(_user$project$Grid$get, x, y, _p90),
-				_1: A3(_user$project$Grid$get, nx, ny, _p90)
+				_0: $this,
+				_1: A2(_elm_lang$core$List_ops['::'], $this, _p9._1)
 			};
-			if (_p86._0.ctor === 'Nothing') {
-				return regions;
-			} else {
-				if (_p86._1.ctor === 'Nothing') {
-					return regions;
-				} else {
-					return A2(_user$project$Main$shikakuOpen, _p86._0._0, dir) ? A3(
-						mergeRegions,
-						regions,
-						{ctor: '_Tuple2', _0: x, _1: y},
-						{ctor: '_Tuple2', _0: nx, _1: ny}) : regions;
-				}
-			}
 		});
-	var considerCell = F2(
-		function (_p87, regions) {
-			var _p88 = _p87;
-			var consider = A2(considerCellDir, _p88._0, _p88._1);
-			return function (_p89) {
-				return A2(
-					consider,
-					_user$project$Main$W,
-					A2(
-						consider,
-						_user$project$Main$E,
-						A2(
-							consider,
-							_user$project$Main$S,
-							A2(consider, _user$project$Main$N, _p89))));
-			}(regions);
-		});
-	var initRegions = A2(
-		_elm_lang$core$List$map,
-		_elm_lang$core$Set$singleton,
-		_user$project$Grid$positions(_p90));
-	return A3(
-		_elm_lang$core$List$foldl,
-		considerCell,
-		initRegions,
-		_user$project$Grid$positions(_p90));
-};
-var _user$project$Main$Hit = {ctor: 'Hit'};
-var _user$project$Main$Miss = {ctor: 'Miss'};
-var _user$project$Main$NoTrail = {ctor: 'NoTrail'};
-var _user$project$Main$viewLaserTrail = function (_p91) {
-	var _p92 = _p91;
-	var _p99 = _p92._3;
-	var _p98 = _p92._1;
-	var _p97 = _p92._0;
-	var _p96 = _p92._2;
-	var tclass = function (t) {
-		var _p93 = t;
-		switch (_p93.ctor) {
-			case 'NoTrail':
-				return '';
-			case 'Hit':
-				return 'laser-hit';
-			default:
-				return 'laser-miss';
-		}
-	};
-	var nr = A2(
-		_elm_lang$svg$Svg$rect,
-		_elm_lang$core$Native_List.fromArray(
-			[
-				_elm_lang$svg$Svg_Attributes$class(
-				tclass(_p97)),
-				_elm_lang$svg$Svg_Attributes$x('0.4'),
-				_elm_lang$svg$Svg_Attributes$y('0'),
-				_elm_lang$svg$Svg_Attributes$width('0.2'),
-				_elm_lang$svg$Svg_Attributes$height('0.5')
-			]),
-		_elm_lang$core$Native_List.fromArray(
-			[]));
-	var sr = A2(
-		_elm_lang$svg$Svg$rect,
-		_elm_lang$core$Native_List.fromArray(
-			[
-				_elm_lang$svg$Svg_Attributes$class(
-				tclass(_p98)),
-				_elm_lang$svg$Svg_Attributes$x('0.4'),
-				_elm_lang$svg$Svg_Attributes$y('0.5'),
-				_elm_lang$svg$Svg_Attributes$width('0.2'),
-				_elm_lang$svg$Svg_Attributes$height('0.5')
-			]),
-		_elm_lang$core$Native_List.fromArray(
-			[]));
-	var er = A2(
-		_elm_lang$svg$Svg$rect,
-		_elm_lang$core$Native_List.fromArray(
-			[
-				_elm_lang$svg$Svg_Attributes$class(
-				tclass(_p96)),
-				_elm_lang$svg$Svg_Attributes$x('0.5'),
-				_elm_lang$svg$Svg_Attributes$y('0.4'),
-				_elm_lang$svg$Svg_Attributes$width('0.5'),
-				_elm_lang$svg$Svg_Attributes$height('0.2')
-			]),
-		_elm_lang$core$Native_List.fromArray(
-			[]));
-	var wr = A2(
-		_elm_lang$svg$Svg$rect,
-		_elm_lang$core$Native_List.fromArray(
-			[
-				_elm_lang$svg$Svg_Attributes$class(
-				tclass(_p99)),
-				_elm_lang$svg$Svg_Attributes$x('0'),
-				_elm_lang$svg$Svg_Attributes$y('0.4'),
-				_elm_lang$svg$Svg_Attributes$width('0.5'),
-				_elm_lang$svg$Svg_Attributes$height('0.2')
-			]),
-		_elm_lang$core$Native_List.fromArray(
-			[]));
-	var rects = A2(
-		_elm_lang$core$List$map,
-		_elm_lang$core$Basics$snd,
-		A2(
-			_elm_lang$core$List$filter,
-			function (_p94) {
-				var _p95 = _p94;
-				return !_elm_lang$core$Native_Utils.eq(_p95._0, _user$project$Main$NoTrail);
+	var _p15 = A3(
+		_elm_lang$core$Array$foldl,
+		handle,
+		{
+			ctor: '_Tuple2',
+			_0: {
+				ctor: '_Tuple3',
+				_0: A2(_user$project$Main$Rung, '', ''),
+				_1: _elm_lang$core$Result$Ok(_user$project$Main$NoRule),
+				_2: _user$project$Main$NoRule
 			},
-			_elm_lang$core$Native_List.fromArray(
-				[
-					{ctor: '_Tuple2', _0: _p97, _1: nr},
-					{ctor: '_Tuple2', _0: _p98, _1: sr},
-					{ctor: '_Tuple2', _0: _p96, _1: er},
-					{ctor: '_Tuple2', _0: _p99, _1: wr}
-				])));
-	return A2(
-		_elm_lang$html$Html$span,
-		_elm_lang$core$Native_List.fromArray(
-			[
-				_elm_lang$html$Html_Attributes$class('laser-trail')
-			]),
-		_elm_lang$core$Native_List.fromArray(
-			[
-				A2(
-				_elm_lang$svg$Svg$svg,
-				_elm_lang$core$Native_List.fromArray(
-					[
-						_elm_lang$svg$Svg_Attributes$viewBox('0 0 1 1')
-					]),
-				rects)
-			]));
+			_1: _elm_lang$core$Native_List.fromArray(
+				[])
+		},
+		ladder);
+	var results = _p15._1;
+	return _elm_lang$core$List$reverse(results);
 };
-var _user$project$Main$LaserTrail = F4(
-	function (a, b, c, d) {
-		return {ctor: 'LaserTrail', _0: a, _1: b, _2: c, _3: d};
-	});
-var _user$project$Main$laserPathGrid = F2(
-	function (model, paths) {
-		var visitDir = F3(
-			function (trail, dir, _p100) {
-				var _p101 = _p100;
-				var _p106 = _p101._3;
-				var _p105 = _p101._1;
-				var _p104 = _p101._0;
-				var _p103 = _p101._2;
-				var _p102 = dir;
-				switch (_p102.ctor) {
-					case 'N':
-						return A4(_user$project$Main$LaserTrail, trail, _p105, _p103, _p106);
-					case 'S':
-						return A4(_user$project$Main$LaserTrail, _p104, trail, _p103, _p106);
-					case 'E':
-						return A4(_user$project$Main$LaserTrail, _p104, _p105, trail, _p106);
-					default:
-						return A4(_user$project$Main$LaserTrail, _p104, _p105, _p103, trail);
-				}
-			});
-		var doBit = F3(
-			function (trail, _p107, grid) {
-				var _p108 = _p107;
-				var _p112 = _p108._2._1;
-				var _p111 = _p108._2._0;
-				var _p109 = A3(_user$project$Grid$get, _p111, _p112, grid);
-				if (_p109.ctor === 'Nothing') {
-					return grid;
-				} else {
-					return A4(
-						_user$project$Grid$set,
-						_p111,
-						_p112,
-						function (_p110) {
-							return A3(
-								visitDir,
-								trail,
-								_p108._1,
-								A3(
-									visitDir,
-									trail,
-									_user$project$Main$opposite(_p108._0),
-									_p110));
-						}(_p109._0),
-						grid);
-				}
-			});
-		var doPath = F2(
-			function (path, grid) {
-				var ok = A2(_user$project$Main$laserOk, model.grid, path.laser);
-				var trail = ok ? _user$project$Main$Hit : _user$project$Main$Miss;
-				return A3(
-					_elm_lang$core$List$foldl,
-					doBit(trail),
-					grid,
-					path.path);
-			});
-		return A3(
-			_elm_lang$core$List$foldl,
-			doPath,
-			A3(
-				_user$project$Grid$grid,
-				9,
-				9,
-				A4(_user$project$Main$LaserTrail, _user$project$Main$NoTrail, _user$project$Main$NoTrail, _user$project$Main$NoTrail, _user$project$Main$NoTrail)),
-			paths);
-	});
-var _user$project$Main$LaserTool = {ctor: 'LaserTool'};
-var _user$project$Main$ShikakuTool = {ctor: 'ShikakuTool'};
-var _user$project$Main$SudokuTool = {ctor: 'SudokuTool'};
-var _user$project$Main$initModel = {grid: _user$project$Main$initialGrid, currentTool: _user$project$Main$SudokuTool, shikakuLast: _elm_lang$core$Maybe$Nothing};
-var _user$project$Main$ChangeMirror = F2(
+var _user$project$Main$UpdateLadder = F2(
 	function (a, b) {
-		return {ctor: 'ChangeMirror', _0: a, _1: b};
+		return {ctor: 'UpdateLadder', _0: a, _1: b};
 	});
-var _user$project$Main$ShikakuClick = F3(
-	function (a, b, c) {
-		return {ctor: 'ShikakuClick', _0: a, _1: b, _2: c};
+var _user$project$Main$SetAnswer = F2(
+	function (a, b) {
+		return {ctor: 'SetAnswer', _0: a, _1: b};
 	});
-var _user$project$Main$SetValue = F3(
-	function (a, b, c) {
-		return {ctor: 'SetValue', _0: a, _1: b, _2: c};
-	});
-var _user$project$Main$viewCell = F6(
-	function (x, y, model, regions, laserGrid, _p113) {
-		var _p114 = _p113;
-		var _p120 = _p114._1._0;
-		var extraAttrs = function () {
-			var _p115 = model.currentTool;
-			switch (_p115.ctor) {
-				case 'SudokuTool':
-					return _elm_lang$core$Native_List.fromArray(
-						[]);
-				case 'ShikakuTool':
-					return _elm_lang$core$Native_List.fromArray(
-						[
-							A2(
-							_elm_lang$html$Html_Events$on,
-							'click',
-							_user$project$Main$clickQuadrant(
-								A2(_user$project$Main$ShikakuClick, x, y)))
-						]);
-				default:
-					return _elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Events$onClick(
-							A2(_user$project$Main$ChangeMirror, x, y))
-						]);
-			}
-		}();
-		var block = A2(_user$project$Main$blockOf, x, y);
-		var region = A2(
-			_elm_lang$core$Maybe$withDefault,
-			_elm_lang$core$Set$singleton(
-				{ctor: '_Tuple2', _0: x, _1: y}),
-			A2(
-				_user$project$Main$regionOf,
-				{ctor: '_Tuple2', _0: x, _1: y},
-				regions));
-		var numMirrors = A2(_user$project$Main$regionMirrors, region, model.grid);
-		var trail = A2(
-			_elm_lang$core$Maybe$withDefault,
-			A4(_user$project$Main$LaserTrail, _user$project$Main$NoTrail, _user$project$Main$NoTrail, _user$project$Main$NoTrail, _user$project$Main$NoTrail),
-			A3(_user$project$Grid$get, x, y, laserGrid));
-		var fixed = function () {
-			var _p116 = _p114._0;
-			if (_p116.ctor === 'SudokuFixed') {
-				return true;
+var _user$project$Main$viewRung = F2(
+	function (n, _p16) {
+		var _p17 = _p16;
+		var _p18 = function () {
+			var _p19 = _p17._1;
+			if (_p19.ctor === 'Err') {
+				return {ctor: '_Tuple2', _0: _p19._0, _1: true};
 			} else {
-				return false;
+				return {ctor: '_Tuple2', _0: _p19._0, _1: false};
 			}
 		}();
+		var rule = _p18._0;
+		var incorrect = _p18._1;
 		var classes = _elm_lang$core$Native_List.fromArray(
 			[
-				{ctor: '_Tuple2', _0: 'cell', _1: true},
-				{ctor: '_Tuple2', _0: 'fixed', _1: fixed},
-				{ctor: '_Tuple2', _0: 'shaded', _1: _p120},
+				{ctor: '_Tuple2', _0: 'rung', _1: true},
+				{ctor: '_Tuple2', _0: 'incorrect', _1: incorrect},
 				{
 				ctor: '_Tuple2',
-				_0: 'box-top',
-				_1: _elm_lang$core$Basics$not(_p114._1._1)
+				_0: 'correct',
+				_1: (!_elm_lang$core$Native_Utils.eq(_p17._0._1, '')) && _elm_lang$core$Basics$not(incorrect)
 			},
 				{
 				ctor: '_Tuple2',
-				_0: 'box-bottom',
-				_1: _elm_lang$core$Basics$not(_p114._1._2)
+				_0: 'vowels',
+				_1: _elm_lang$core$Native_Utils.eq(rule, _user$project$Main$Vowels)
 			},
 				{
 				ctor: '_Tuple2',
-				_0: 'box-right',
-				_1: _elm_lang$core$Basics$not(_p114._1._3)
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'box-left',
-				_1: _elm_lang$core$Basics$not(_p114._1._4)
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'row-invalid',
-				_1: _elm_lang$core$Basics$not(
-					A2(_user$project$Main$rowValid, y, model))
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'col-invalid',
-				_1: _elm_lang$core$Basics$not(
-					A2(_user$project$Main$colValid, x, model))
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'block-invalid',
-				_1: _elm_lang$core$Basics$not(
-					A2(
-						_user$project$Main$blockValid,
-						A2(_user$project$Main$blockOf, x, y),
-						model))
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'region-not-rectangle',
-				_1: _elm_lang$core$Basics$not(
-					_user$project$Main$isRectangle(region))
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'region-invalid',
-				_1: A2(_user$project$Main$regionInvalid, region, model.grid)
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'region-correct',
-				_1: A2(_user$project$Main$regionValid, region, model.grid)
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'region-has-mirror',
-				_1: _elm_lang$core$Native_Utils.eq(numMirrors, 1)
-			},
-				{
-				ctor: '_Tuple2',
-				_0: 'region-too-many-mirrors',
-				_1: _elm_lang$core$Native_Utils.cmp(numMirrors, 1) > 0
+				_0: 'consonants',
+				_1: _elm_lang$core$Native_Utils.eq(rule, _user$project$Main$Consonants)
 			}
 			]);
-		var showSudokuValue = function () {
-			var _p117 = model.currentTool;
-			switch (_p117.ctor) {
-				case 'SudokuTool':
-					return true;
-				case 'ShikakuTool':
-					return _p120;
-				default:
-					return false;
-			}
-		}();
-		var val = function () {
-			var _p118 = _user$project$Main$sudokuValue(_p114);
-			if (_p118.ctor === 'Nothing') {
-				return '';
-			} else {
-				return _elm_lang$core$Basics$toString(_p118._0);
-			}
-		}();
-		var sudokuView = showSudokuValue ? (fixed ? A2(
-			_elm_lang$html$Html$span,
-			_elm_lang$core$Native_List.fromArray(
-				[
-					_elm_lang$html$Html_Attributes$class('value')
-				]),
-			_elm_lang$core$Native_List.fromArray(
-				[
-					_elm_lang$html$Html$text(val)
-				])) : A2(
-			_elm_lang$html$Html$input,
-			_elm_lang$core$Native_List.fromArray(
-				[
-					_elm_lang$html$Html_Events$onInput(
-					A2(_user$project$Main$SetValue, x, y)),
-					_elm_lang$html$Html_Attributes$value(val)
-				]),
-			_elm_lang$core$Native_List.fromArray(
-				[]))) : _elm_lang$html$Html$text('');
-		var content = function () {
-			var _p119 = model.currentTool;
-			switch (_p119.ctor) {
-				case 'SudokuTool':
-					return _elm_lang$core$Native_List.fromArray(
-						[sudokuView]);
-				case 'ShikakuTool':
-					return _p120 ? _elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html$text(val)
-						]) : _elm_lang$core$Native_List.fromArray(
-						[]);
-				default:
-					return _elm_lang$core$Native_List.fromArray(
-						[
-							_user$project$Main$viewLaserTrail(trail),
-							_user$project$Main$viewMirror(_p114._2)
-						]);
-			}
-		}();
 		return A2(
-			_elm_lang$html$Html$td,
-			A2(
-				_elm_lang$core$Basics_ops['++'],
-				_elm_lang$core$Native_List.fromArray(
-					[
-						_elm_lang$html$Html_Attributes$classList(classes)
-					]),
-				extraAttrs),
-			content);
-	});
-var _user$project$Main$viewMaybeCell = F5(
-	function (x, y, model, regions, laserGrid) {
-		var mcell = A3(_user$project$Grid$get, x, y, model.grid);
-		var _p121 = mcell;
-		if (_p121.ctor === 'Nothing') {
-			return _elm_lang$html$Html$text('');
-		} else {
-			return A6(_user$project$Main$viewCell, x, y, model, regions, laserGrid, _p121._0);
-		}
-	});
-var _user$project$Main$viewGrid = F3(
-	function (model, regions, laserGrid) {
-		var bottomLaserRow = A2(
-			_elm_lang$core$List_ops['::'],
-			A2(
-				_elm_lang$html$Html$th,
-				_elm_lang$core$Native_List.fromArray(
-					[]),
-				_elm_lang$core$Native_List.fromArray(
-					[])),
-			A2(
-				_elm_lang$core$Basics_ops['++'],
-				A2(
-					_elm_lang$core$List$map,
-					A2(_user$project$Main$viewLaserEnd, model.grid, _user$project$Main$S),
-					_elm_lang$core$Native_List.range(0, 8)),
-				_elm_lang$core$Native_List.fromArray(
-					[
-						A2(
-						_elm_lang$html$Html$th,
-						_elm_lang$core$Native_List.fromArray(
-							[]),
-						_elm_lang$core$Native_List.fromArray(
-							[]))
-					])));
-		var rowCells = function (y) {
-			return A2(
-				_elm_lang$core$List$map,
-				function (x) {
-					return A5(_user$project$Main$viewMaybeCell, x, y, model, regions, laserGrid);
-				},
-				_elm_lang$core$Native_List.range(0, 8));
-		};
-		var gridRows = A2(
-			_elm_lang$core$List$map,
-			function (y) {
-				return A2(
-					_elm_lang$html$Html$tr,
-					_elm_lang$core$Native_List.fromArray(
-						[]),
+			_elm_lang$html$Html$li,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$classList(classes)
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
 					A2(
-						_elm_lang$core$List_ops['::'],
-						A3(_user$project$Main$viewLaserEnd, model.grid, _user$project$Main$W, y),
-						A2(
-							_elm_lang$core$Basics_ops['++'],
-							rowCells(y),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									A3(_user$project$Main$viewLaserEnd, model.grid, _user$project$Main$E, y)
-								]))));
-			},
-			_elm_lang$core$Native_List.range(0, 8));
-		var topLaserRow = A2(
-			_elm_lang$core$List_ops['::'],
-			A2(
-				_elm_lang$html$Html$th,
-				_elm_lang$core$Native_List.fromArray(
-					[]),
-				_elm_lang$core$Native_List.fromArray(
-					[])),
-			A2(
-				_elm_lang$core$Basics_ops['++'],
-				A2(
-					_elm_lang$core$List$map,
-					A2(_user$project$Main$viewLaserEnd, model.grid, _user$project$Main$N),
-					_elm_lang$core$Native_List.range(0, 8)),
-				_elm_lang$core$Native_List.fromArray(
-					[
-						A2(
-						_elm_lang$html$Html$th,
-						_elm_lang$core$Native_List.fromArray(
-							[]),
-						_elm_lang$core$Native_List.fromArray(
-							[]))
-					])));
-		return A2(
-			_elm_lang$html$Html$table,
-			_elm_lang$core$Native_List.fromArray(
-				[
-					_elm_lang$html$Html_Attributes$class('grid')
-				]),
-			A2(
-				_elm_lang$core$List_ops['::'],
-				A2(
-					_elm_lang$html$Html$tr,
-					_elm_lang$core$Native_List.fromArray(
-						[]),
-					topLaserRow),
-				A2(
-					_elm_lang$core$Basics_ops['++'],
-					gridRows,
+					_elm_lang$html$Html$span,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							A2(
-							_elm_lang$html$Html$tr,
-							_elm_lang$core$Native_List.fromArray(
-								[]),
-							bottomLaserRow)
-						]))));
+							_elm_lang$html$Html_Attributes$class('clue')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text(_p17._0._0)
+						])),
+					A2(
+					_elm_lang$html$Html$input,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Events$onInput(
+							_user$project$Main$SetAnswer(n))
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[]))
+				]));
 	});
-var _user$project$Main$CurrentTool = function (a) {
-	return {ctor: 'CurrentTool', _0: a};
-};
+var _user$project$Main$viewLadder = F3(
+	function (model, n, ladder) {
+		var results = _user$project$Main$ladderAlternate(ladder);
+		return A2(
+			_elm_lang$html$Html$ul,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('ladder')
+				]),
+			A2(
+				_elm_lang$core$List$indexedMap,
+				F2(
+					function (k, rung) {
+						return A2(
+							_elm_lang$html$Html_App$map,
+							_user$project$Main$UpdateLadder(n),
+							A2(_user$project$Main$viewRung, k, rung));
+					}),
+				results));
+	});
 var _user$project$Main$view = function (model) {
 	return A3(
 		_user$project$Puzzlebomb$puzzlebomb,
-		'june 2016',
-		54,
+		'march 2016',
+		51,
 		A2(
 			_elm_lang$html$Html$div,
 			_elm_lang$core$Native_List.fromArray(
 				[
-					_elm_lang$html$Html_Attributes$classList(
-					_elm_lang$core$Native_List.fromArray(
-						[
-							{ctor: '_Tuple2', _0: 'sushikasers', _1: true},
-							{
-							ctor: '_Tuple2',
-							_0: 'sudoku',
-							_1: _elm_lang$core$Native_Utils.eq(model.currentTool, _user$project$Main$SudokuTool)
-						},
-							{
-							ctor: '_Tuple2',
-							_0: 'shikaku',
-							_1: _elm_lang$core$Native_Utils.eq(model.currentTool, _user$project$Main$ShikakuTool)
-						},
-							{
-							ctor: '_Tuple2',
-							_0: 'lasers',
-							_1: _elm_lang$core$Native_Utils.eq(model.currentTool, _user$project$Main$LaserTool)
-						}
-						]))
+					_elm_lang$html$Html_Attributes$class('concordant-avowal')
 				]),
 			_elm_lang$core$Native_List.fromArray(
 				[
 					_user$project$Main$css,
-					A3(
-					_user$project$Main$viewGrid,
-					model,
-					_user$project$Main$findRegions(model.grid),
-					A2(
-						_user$project$Main$laserPathGrid,
-						model,
-						A2(
-							_elm_lang$core$List$map,
-							_user$project$Main$laserPath(model.grid),
-							_user$project$Main$lasers))),
-					A2(
-					_elm_lang$html$Html$div,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('controls')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[
-							A2(
-							_elm_lang$html$Html$button,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Events$onClick(
-									_user$project$Main$CurrentTool(_user$project$Main$SudokuTool)),
-									_elm_lang$html$Html_Attributes$classList(
-									_elm_lang$core$Native_List.fromArray(
-										[
-											{
-											ctor: '_Tuple2',
-											_0: 'current-tool',
-											_1: _elm_lang$core$Native_Utils.eq(model.currentTool, _user$project$Main$SudokuTool)
-										}
-										]))
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text('Sudoku')
-								])),
-							A2(
-							_elm_lang$html$Html$button,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Events$onClick(
-									_user$project$Main$CurrentTool(_user$project$Main$ShikakuTool)),
-									_elm_lang$html$Html_Attributes$classList(
-									_elm_lang$core$Native_List.fromArray(
-										[
-											{
-											ctor: '_Tuple2',
-											_0: 'current-tool',
-											_1: _elm_lang$core$Native_Utils.eq(model.currentTool, _user$project$Main$ShikakuTool)
-										}
-										]))
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text('Shikaku')
-								])),
-							A2(
-							_elm_lang$html$Html$button,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Events$onClick(
-									_user$project$Main$CurrentTool(_user$project$Main$LaserTool)),
-									_elm_lang$html$Html_Attributes$classList(
-									_elm_lang$core$Native_List.fromArray(
-										[
-											{
-											ctor: '_Tuple2',
-											_0: 'current-tool',
-											_1: _elm_lang$core$Native_Utils.eq(model.currentTool, _user$project$Main$LaserTool)
-										}
-										]))
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html$text('Lasers')
-								]))
-						])),
 					A2(
 					_elm_lang$html$Html$header,
 					_elm_lang$core$Native_List.fromArray(
@@ -10247,18 +8810,27 @@ var _user$project$Main$view = function (model) {
 								[]),
 							_elm_lang$core$Native_List.fromArray(
 								[
-									_elm_lang$html$Html$text('Sushikasers')
+									_elm_lang$html$Html$text('Concordant Avowal')
 								])),
 							A2(
 							_elm_lang$html$Html$h2,
 							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('attribution')
-								]),
+								[]),
 							_elm_lang$core$Native_List.fromArray(
 								[_user$project$Main$attribution]))
 						])),
-					_user$project$Main$explanation
+					_user$project$Main$explanation,
+					A2(
+					_elm_lang$html$Html$ul,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('ladders')
+						]),
+					_elm_lang$core$Array$toList(
+						A2(
+							_elm_lang$core$Array$indexedMap,
+							_user$project$Main$viewLadder(model),
+							model.ladders)))
 				])));
 };
 var _user$project$Main$main = {

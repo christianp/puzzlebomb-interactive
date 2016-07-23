@@ -8098,41 +8098,50 @@ var _user$project$Puzzlebomb$header = F2(
 			_elm_lang$core$Native_List.fromArray(
 				[
 					A2(
-					_elm_lang$html$Html$h2,
+					_elm_lang$html$Html$a,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('issue')
+							_elm_lang$html$Html_Attributes$href('http://puzzlebomb.co.uk')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html$text(issue)
-						])),
-					A2(
-					_elm_lang$html$Html$h2,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('month')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html$text(
 							A2(
-								_elm_lang$core$Basics_ops['++'],
-								'issue ',
-								_elm_lang$core$Basics$toString(month)))
-						])),
-					A2(
-					_elm_lang$html$Html$img,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('puzzlebomb-logo'),
-							_elm_lang$html$Html_Attributes$src('puzzlebomb-logo.png')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[]))
+							_elm_lang$html$Html$h2,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('issue')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text(issue)
+								])),
+							A2(
+							_elm_lang$html$Html$h2,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('month')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text(
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										'issue ',
+										_elm_lang$core$Basics$toString(month)))
+								])),
+							A2(
+							_elm_lang$html$Html$img,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('puzzlebomb-logo'),
+									_elm_lang$html$Html_Attributes$src('../puzzlebomb-logo.png')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[]))
+						]))
 				]));
 	});
-var _user$project$Puzzlebomb$css = _user$project$Css$stylesheet('\n    html {\n        font-size: 20px;\n    }\n    body {\n        width: 600px;\n        margin: 0 auto;\n        font-family: \"Apple LiGothic\", \"Century Gothic\", sans-serif;\n    }\n    .puzzlebomb-logo {\n        max-width: 100%;\n    }\n    header.puzzlebomb-header {\n        position: relative;\n        border-bottom: 1px solid;\n        margin-top: 1em;\n        margin-bottom: 1em;\n        padding-bottom: 0.5em;\n    }\n    header.puzzlebomb-header .month, header .issue {\n        font-size: 1rem;\n        position: absolute;\n    }\n    header.puzzlebomb-header .issue {\n        left: 0;\n    }\n    header.puzzlebomb-header .month {\n        right: 0;\n    }\n    .explanation {\n        font-weight: bold;\n        font-size: 0.75em;\n    }\n    footer {\n        margin-top: 1em;\n        border-top: 1px solid;\n        font-weight: bold;\n        font-size: 0.75em;\n        text-align: right;\n    }\n    ');
+var _user$project$Puzzlebomb$css = _user$project$Css$stylesheet('\n    html {\n        font-size: 20px;\n    }\n    body {\n        width: 600px;\n        margin: 0 auto;\n        font-family: \"Apple LiGothic\", \"Century Gothic\", sans-serif;\n    }\n    .puzzlebomb-logo {\n        max-width: 100%;\n    }\n    header.puzzlebomb-header {\n        position: relative;\n        border-bottom: 1px solid;\n        margin-top: 1em;\n        margin-bottom: 1em;\n        padding-bottom: 0.5em;\n    }\n    header.puzzlebomb-header a {\n        color: black;\n        text-decoration: none;\n    }\n    header.puzzlebomb-header .month, header .issue {\n        font-size: 1rem;\n        position: absolute;\n    }\n    header.puzzlebomb-header .issue {\n        left: 0;\n    }\n    header.puzzlebomb-header .month {\n        right: 0;\n    }\n    .explanation {\n        font-weight: bold;\n        font-size: 0.75em;\n    }\n    footer {\n        margin-top: 1em;\n        border-top: 1px solid;\n        font-weight: bold;\n        font-size: 0.75em;\n        text-align: right;\n    }\n    ');
 var _user$project$Puzzlebomb$puzzlebomb = F3(
 	function (issue, month, puzzle) {
 		return A2(
